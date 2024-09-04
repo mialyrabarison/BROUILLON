@@ -1,0 +1,95 @@
+@import "{{ site.theme }}";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+@font-face {
+    font-family:"Raleway";
+    src: url(../font/Raleway-Regular.woff) url(../font/Raleway-Regular.ttf), format(trutype); 
+    
+}
+@font-face {
+    font-family:"raleway-italique";
+    src: url(../font/Raleway-Italic.woff) url(../font/Raleway-Italic.ttf) format(trutype);
+}
+@font-face {
+    font-family: "raleway-bold";
+    src: url(../font/Raleway-Bold.woff) url(../font/Raleway-Bold.ttf) format(trutype);
+}
+
+ 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    width: 1160px;
+    margin: auto;
+    border-right: 1px solid #782221;
+}
+ 
+h1,
+h2,
+h3 {
+    font-family: "Lato", sans-serif;
+}
+ 
+p,
+a,
+ul,
+small {
+    font-family: "Raleway", sans-serif;
+}
+ 
+ul {
+    margin-left: 30px;
+}
+ 
+a {
+    color: white;
+    text-decoration: none;
+}
+ 
+a:hover {
+    text-decoration: underline;
+}
+ 
+header {
+    background-color: #782221;
+    color: white;
+    display: flex;
+    flex-direction: column;
+ 
+}
+ 
+header img {
+    height: 250px;
+    width: 250px;
+    margin: 20px auto auto;
+ 
+}
+ 
+header img:hover {
+    cursor: zoom-in;
+}
+ 
+.profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+    line-height: 60px;
+}
+
+.rounded-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.contact {
+    background-color: #2c1d27;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;;
+}
